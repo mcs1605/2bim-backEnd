@@ -8,3 +8,10 @@ class OrderService:
             return "Usuário inválido!"
         print(f"Pedido do produto {product_id} para o usuário {user_id} confirmado.")
         return "Pedido confirmado com sucesso!"
+
+# Instanciando serviços
+user_service = UserService()
+order_service = OrderService()
+# Exemplo de execução
+resultado = order_service.confirm_order(1, 101)
+print(resultado)
